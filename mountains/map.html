@@ -9,13 +9,13 @@
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e0e0; }
 
     .nav { position: fixed; top: 0; right: 0; left: 0; background: #1a2a3a; border-bottom: 1px solid #2a3a4a; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
-    .nav-title { color: #c9d6df; font-size: 0.85rem; font-weight: 600; }
+    .nav-title { color: #c9d6df; font-size: 1.1rem; font-weight: 600; }
     .nav-links { display: flex; gap: 16px; }
     .nav-links a { color: #5ba3d9; text-decoration: none; font-size: 0.82rem; padding: 4px 12px; border: 1px solid transparent; border-radius: 4px; transition: all 0.15s; }
     .nav-links a:hover { border-color: #5ba3d9; }
     .nav-links a.active { background: #1a3a5a; border-color: #5ba3d9; }
 
-    .banner { background: #1a3040; text-align: center; padding: 6px 20px; font-size: 0.78rem; color: #6a8a9a; border-bottom: 1px solid #2a3a4a; margin-top: 42px; }
+    .banner { background: #1a3040; text-align: center; padding: 6px 20px; font-size: 0.78rem; color: #6a8a9a; border-bottom: 1px solid #2a3a4a; margin-top: 48px; }
     .banner a { color: #5ba3d9; text-decoration: none; }
     .banner a:hover { text-decoration: underline; }
 
@@ -29,7 +29,7 @@
     }
 
     @media (max-width: 480px) {
-      .nav-title { display: none; }
+      .nav-title { font-size: 0.7rem; }
       .nav-links a { font-size: 0.72rem; padding: 3px 6px; }
     }
   </style>
@@ -48,7 +48,7 @@
   <div class="banner">Data sourced from <a href="https://www.walkhighlands.co.uk/" target="_blank">walkhighlands.co.uk</a> — Scotland's walking and hiking guide</div>
 
   <div class="map-container">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1exHSdQk3W_NTbT0Ca0T0VQMqKVPDCEI&ehbc=2E312F"></iframe>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1exHSdQk3W_NTbT0Ca0T0VQMqKVPDCEI&ehbc=2E312F" title="Scottish Mountains Map">Your browser does not support iframes.</iframe>
   </div>
 
 </body>
