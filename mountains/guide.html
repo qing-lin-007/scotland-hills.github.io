@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiking Preparation Guide — Scottish Mountains</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1923; color: #e0e0e0; }
+
+    .nav { position: fixed; top: 0; right: 0; left: 0; background: #1a2a3a; border-bottom: 1px solid #2a3a4a; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+    .nav-title { color: #c9d6df; font-size: 0.85rem; font-weight: 600; }
+    .nav-links { display: flex; gap: 16px; }
+    .nav-links a { color: #5ba3d9; text-decoration: none; font-size: 0.82rem; padding: 4px 12px; border: 1px solid transparent; border-radius: 4px; transition: all 0.15s; }
+    .nav-links a:hover { border-color: #5ba3d9; }
+    .nav-links a.active { background: #1a3a5a; border-color: #5ba3d9; }
+
+    .banner { background: #1a3040; text-align: center; padding: 6px 20px; font-size: 0.78rem; color: #6a8a9a; border-bottom: 1px solid #2a3a4a; margin-top: 42px; }
+    .banner a { color: #5ba3d9; text-decoration: none; }
+    .banner a:hover { text-decoration: underline; }
+
+    header { background: linear-gradient(135deg, #1a2a3a 0%, #2a3a4a 100%); padding: 30px 30px 24px; border-bottom: 2px solid #3a506b; }
+    header h1 { font-size: 1.6rem; font-weight: 600; color: #c9d6df; letter-spacing: 0.5px; }
+    header p { color: #7a8a9a; font-size: 0.85rem; margin-top: 6px; line-height: 1.5; }
+
+    .content { max-width: 800px; margin: 0 auto; padding: 24px; }
+
+    .section { background: #1a2a3a; border: 1px solid #2a3a4a; border-radius: 8px; padding: 24px; margin-bottom: 16px; }
+    .section h2 { color: #5ba3d9; font-size: 1.1rem; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid #2a3a4a; }
+    .section ul { list-style: none; padding: 0; }
+    .section li { padding: 7px 0; padding-left: 22px; position: relative; color: #b0c0d0; font-size: 0.88rem; line-height: 1.6; }
+    .section li::before { content: ''; position: absolute; left: 0; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: #3a506b; }
+    .section a { color: #5ba3d9; text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+    .section strong { color: #e0e0e0; }
+
+    .toc { background: #152030; border: 1px solid #2a3a4a; border-radius: 8px; padding: 20px; margin-bottom: 24px; }
+    .toc h3 { color: #7a9ab5; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+    .toc a { display: inline-block; color: #5ba3d9; text-decoration: none; font-size: 0.85rem; padding: 4px 12px; margin: 3px 4px; border: 1px solid #2a3a4a; border-radius: 4px; transition: all 0.15s; }
+    .toc a:hover { border-color: #5ba3d9; background: rgba(91,163,217,0.08); }
+
+    .emergency { background: #2a1a1a; border-color: #5a2a2a; }
+    .emergency h2 { color: #e07070; }
+    .emergency li::before { background: #5a2a2a; }
+
+    footer { text-align: center; padding: 30px 24px; color: #4a5a6a; font-size: 0.75rem; }
+    footer a { color: #5ba3d9; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .nav { padding: 8px 12px; }
+      .nav-title { font-size: 0.75rem; }
+      .nav-links a { font-size: 0.75rem; padding: 4px 8px; }
+      header { padding: 20px 16px; }
+      header h1 { font-size: 1.2rem; }
+      .content { padding: 16px 12px; }
+      .section { padding: 16px; }
+      .section li { font-size: 0.82rem; }
+      .toc a { font-size: 0.78rem; padding: 3px 8px; }
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 1rem; }
+      header p { font-size: 0.78rem; }
+      .nav-title { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <span class="nav-title">Scottish Mountains Explorer</span>
+    <div class="nav-links">
+      <a href="mountains.html">Mountains</a>
+      <a href="guide.html" class="active">Hiking Guide</a>
+    </div>
+  </div>
+
+  <div class="banner">Data sourced from <a href="https://www.walkhighlands.co.uk/" target="_blank">walkhighlands.co.uk</a> — Scotland's walking and hiking guide</div>
+
+  <header>
+    <h1>Hiking Preparation Guide</h1>
+    <p>Scotland's mountains are beautiful but demand respect. Proper preparation can mean the difference between a great day out and a dangerous situation.</p>
+  </header>
+
+  <div class="content">
+    <div class="toc">
+      <h3>Contents</h3>
+      <a href="#weather">Weather</a>
+      <a href="#clothing">Clothing</a>
+      <a href="#food">Food &amp; Water</a>
+      <a href="#kit">Essential Kit</a>
+      <a href="#safety">Safety</a>
+      <a href="#emergency">Emergency Numbers</a>
+      <a href="#access">Access &amp; Etiquette</a>
+      <a href="#links">Useful Links</a>
+    </div>
+
+    <div class="section" id="weather">
+      <h2>Weather</h2>
+      <ul>
+        <li><strong>Check forecasts before every hike</strong> — use <a href="https://www.mwis.org.uk/" target="_blank">MWIS (Mountain Weather Information Service)</a> for mountain-specific forecasts</li>
+        <li>Conditions change rapidly — sunshine can turn to cloud, wind and rain within minutes</li>
+        <li>Temperature drops roughly 1C per 150m of altitude — summits can be 6-8C colder than valleys</li>
+        <li>Wind chill is the biggest danger — 40mph winds at 5C feel like -5C</li>
+        <li>Visibility can drop to near zero in cloud — know how to navigate with map and compass</li>
+        <li>Winter conditions (snow, ice) can occur from October to May above 600m</li>
+      </ul>
+    </div>
+
+    <div class="section" id="clothing">
+      <h2>Clothing</h2>
+      <ul>
+        <li><strong>Layer system:</strong> base layer (moisture-wicking), mid layer (insulation), outer layer (waterproof)</li>
+        <li><strong>Waterproof jacket and trousers</strong> — essential, not optional. Gore-Tex or equivalent</li>
+        <li><strong>Walking boots</strong> — sturdy, waterproof, ankle-supporting, and broken in</li>
+        <li><strong>Warm hat and gloves</strong> — even in summer for higher summits</li>
+        <li><strong>Spare warm layer</strong> — fleece or down jacket in your pack</li>
+        <li>Avoid cotton — it stays wet and chills you. Choose wool or synthetics</li>
+        <li>Gaiters are useful for boggy ground and wet grass</li>
+      </ul>
+    </div>
+
+    <div class="section" id="food">
+      <h2>Food &amp; Water</h2>
+      <ul>
+        <li>Carry at least <strong>1.5-2 litres of water</strong> per person</li>
+        <li>Pack more food than you think you need — high-energy snacks (nuts, chocolate, flapjacks)</li>
+        <li>A warm flask of tea or soup is a morale booster in cold conditions</li>
+        <li>Eat and drink regularly — don't wait until you're hungry or thirsty</li>
+        <li>Sandwiches, energy bars, dried fruit, and cheese are reliable hill food</li>
+        <li>Stream water in Scotland is generally safe but consider purification tablets as backup</li>
+      </ul>
+    </div>
+
+    <div class="section" id="kit">
+      <h2>Essential Kit</h2>
+      <ul>
+        <li><strong>Map and compass</strong> — and know how to use them. Don't rely solely on phone GPS</li>
+        <li><strong>Fully charged phone</strong> — but keep it warm (batteries drain fast in cold)</li>
+        <li><strong>Head torch</strong> — with spare batteries, in case you're out longer than planned</li>
+        <li><strong>First aid kit</strong> — blister plasters, bandages, painkillers, emergency whistle</li>
+        <li><strong>Emergency shelter / survival bag</strong> — lightweight but can save your life</li>
+        <li><strong>Rucksack</strong> — 25-35 litres for a day walk, with waterproof liner or dry bags</li>
+        <li>Sun cream and sunglasses — UV is stronger at altitude</li>
+        <li>Walking poles — helpful on steep descents and boggy terrain</li>
+      </ul>
+    </div>
+
+    <div class="section emergency" id="safety">
+      <h2>Navigation &amp; Safety</h2>
+      <ul>
+        <li><strong>Tell someone your route and expected return time</strong></li>
+        <li>Start early — daylight hours are short in autumn/winter (sunset can be 3:30pm in December)</li>
+        <li>Know your escape routes — have a plan B if weather deteriorates</li>
+        <li>Turn back if conditions worsen — the mountain will always be there another day</li>
+        <li>In emergency, dial <strong>999</strong> and ask for <strong>Police then Mountain Rescue</strong></li>
+        <li>The international distress signal is <strong>6 blasts on a whistle</strong> (or 6 torch flashes), repeated every minute</li>
+      </ul>
+    </div>
+
+    <div class="section emergency" id="emergency">
+      <h2>Emergency Numbers</h2>
+      <ul>
+        <li><strong>999 / 112</strong> — Emergency services (Police, Ambulance, Fire, Mountain Rescue). Ask for <strong>Police</strong>, then <strong>Mountain Rescue</strong></li>
+        <li><strong>101</strong> — Police Scotland (non-emergency)</li>
+        <li><strong>111</strong> — NHS 24 (non-emergency medical advice, 24/7)</li>
+        <li><strong>116 123</strong> — Samaritans (emotional support, 24/7)</li>
+        <li><strong>0300 067 3000</strong> — Scottish Ambulance Service (non-emergency)</li>
+        <li><strong>Coastguard: 999</strong> — For coastal or island emergencies, ask for <strong>Coastguard</strong></li>
+        <li><strong>No signal?</strong> Try sending an SMS to <strong>999</strong> (must register first at <a href="https://www.emergencysms.net/" target="_blank">emergencysms.net</a>). Or try the <a href="https://what3words.com/" target="_blank">what3words</a> app to share your exact location</li>
+      </ul>
+    </div>
+
+    <div class="section" id="access">
+      <h2>Scottish Access &amp; Etiquette</h2>
+      <ul>
+        <li>Scotland has a <strong>right to roam</strong> — you can walk almost anywhere responsibly</li>
+        <li>Follow the <a href="https://www.outdooraccess-scotland.scot/" target="_blank">Scottish Outdoor Access Code</a></li>
+        <li>Check for <strong>deer stalking season</strong> (Aug-Oct) — use <a href="https://www.outdooraccess-scotland.scot/heading-outdoors-during-deer-stalking-season" target="_blank">Heading for the Scottish Hills</a> to check</li>
+        <li>Leave no trace — take all litter home, don't disturb wildlife</li>
+        <li>Close gates behind you, keep dogs under control near livestock</li>
+        <li>Park considerately — don't block gates or passing places on single track roads</li>
+      </ul>
+    </div>
+
+    <div class="section" id="links">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="https://www.walkhighlands.co.uk/" target="_blank">WalkHighlands</a> — routes, maps and walk reports</li>
+        <li><a href="https://www.mwis.org.uk/" target="_blank">MWIS</a> — mountain weather forecasts</li>
+        <li><a href="https://www.metoffice.gov.uk/" target="_blank">Met Office</a> — general weather</li>
+        <li><a href="https://www.sais.gov.uk/" target="_blank">SAIS</a> — Scottish Avalanche Information Service (winter)</li>
+        <li><a href="https://www.mountaineering.scot/" target="_blank">Mountaineering Scotland</a> — skills, courses, advice</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <a href="mountains.html">Back to Mountains Explorer</a>
+  </footer>
+
+</body>
+</html>
