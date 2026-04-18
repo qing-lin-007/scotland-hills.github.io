@@ -1,5 +1,3 @@
-# qing-lin-007.github.io
-
 ## Scottish Mountains Explorer
 
 Interactive browser for Scotland's hills — Munros, Corbetts, Donalds & Grahams — with ratings, parking info, and trip planning from Edinburgh.
