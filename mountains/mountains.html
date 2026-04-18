@@ -683,6 +683,9 @@
       const items = allCols.map(key => {
         const v = r[key] || '';
         if (!v) return '';
+        if (key === 'PostCode') {
+          return '<div class="detail-item"><label>Weather</label><span><a href="https://www.bbc.co.uk/weather/' + v.toLowerCase() + '" target="_blank" rel="noopener" class="weather-btn">' + v + '</a></span></div>';
+        }
         return '<div class="detail-item"><label>' + key.replace(/_/g, ' ') + '</label><span>' + v + '</span></div>';
       }).filter(Boolean).join('');
       return '<tr><td colspan="' + DISPLAY_COLS.length + '"><div class="detail-panel open"><div class="detail-grid">' + items + '</div></div></td></tr>';
