@@ -652,8 +652,8 @@
               v = '\u2014'; cls = 'no-data';
             }
           } else if (c.key === 'Is_Climbed') {
-            cls = v === 'Yes' ? 'climbed-yes' : 'climbed-no';
-            v = v === 'Yes' ? '<span class="pill pill-yes">Yes</span>' : '<span class="pill pill-no">No</span>';
+            cls = v.toLowerCase() === 'yes' ? 'climbed-yes' : 'climbed-no';
+            v = v.toLowerCase() === 'yes' ? '<span class="pill pill-yes">Yes</span>' : '<span class="pill pill-no">No</span>';
           } else if (c.key === 'Users_Rating' && v) {
             cls = 'rating num';
             v = '\u2605 ' + v;
